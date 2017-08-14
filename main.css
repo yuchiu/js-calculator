@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300');
+body {
+    background-image: url('background.jpg');
+    background-size: cover;
+    margin-top: 10%;
+    background-attachment: fixed;
+}
+
+#calc-container {
+    width: 390px;
+    border: 1px solid grey;
+    border-radius: 4px;
+    background: rgba(72, 63, 92, 0.96);
+    background: -moz-linear-gradient(top, rgba(72, 63, 92, 0.96) 0%, rgba(102, 106, 150, 1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(72, 63, 92, 0.96)), color-stop(100%, rgba(102, 106, 150, 1)));
+    background: -webkit-linear-gradient(top, rgba(72, 63, 92, 0.96) 0%, rgba(102, 106, 150, 1) 100%);
+    background: -o-linear-gradient(top, rgba(72, 63, 92, 0.96) 0%, rgba(102, 106, 150, 1) 100%);
+    background: -ms-linear-gradient(top, rgba(72, 63, 92, 0.96) 0%, rgba(102, 106, 150, 1) 100%);
+    background: linear-gradient(to bottom, rgba(72, 63, 92, 0.96) 0%, rgba(102, 106, 150, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#483f5c', endColorstr='#666a96', GradientType=0);
+}
+
+input[type=button] {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 30px;
+    width: 85px;
+    height: 100px;
+    margin: 0px;
+    border: 1px solid #9399d6;
+    background-color: transparent;
+    outline: none;
+    transition-duration: 0.8s, 1.5s, 0.8s;
+    transition-property: background, border-radius, color;
+}
+
+input[type=button]:hover {
+    color: #fff;
+    background: #5c6e8e;
+    border-radius: 1px;
+}
+
+input[type=button]:active {
+    transition-duration: 0.6s;
+    background: #2e385b;
+    border-radius: 0;
+}
+
+input[type=text] {
+    font-family: 'Quicksand', sans-serif;
+    position: relative;
+    width: 265px;
+    height: 100px;
+    margin: 5px auto;
+    background-color: transparent;
+    border: none;
+    font-size: 50px;
+    text-align: right;
+    vertical-align: text-top;
+    color: #99ffcc;
+    outline: none;
+}
+
+.number {
+    color: #99ffcc;
+}
+
+.symbol {
+    color: #f9a377;
+}
+
+#clear {
+    position: relative;
+    border-radius: 15px;
+    width: 60px;
+    height: 60px;
+    top: 30px;
+    left: 15px;
+    color: #fc4160;
+    vertical-align: text-top;
+}
+
+#clear:hover {
+    color: #fff;
+    background: #d88e6e;
+    border-radius: 1em;
+}
+
+#clear:active {
+    transition-duration: 0.6s;
+    background: #a33830;
+    border-radius: 0;
+}
