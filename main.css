@@ -1,17 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand:300');
 body {
-    background-image: url('background.jpg');
-    background-size: cover;
+    background: #C9D6FF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #E2E2E2, #C9D6FF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #E2E2E2, #C9D6FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     margin-top: 10%;
-    background-attachment: fixed;
 }
 
 #calc-container {
     width: 390px;
-    border: 1px solid grey;
-    border-radius: 4px;
+    border: 2px solid grey;
+    border-radius: 6px;
     background: rgba(72, 63, 92, 0.96);
-    background: -moz-linear-gradient(top, rgba(72, 63, 92, 0.96) 0%, rgba(102, 106, 150, 1) 100%);
+    background: -moz-linear-gradient(top, rgba(71, 63, 92, 0.96) 0%, rgba(102, 106, 150, 1) 100%);
     background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(72, 63, 92, 0.96)), color-stop(100%, rgba(102, 106, 150, 1)));
     background: -webkit-linear-gradient(top, rgba(72, 63, 92, 0.96) 0%, rgba(102, 106, 150, 1) 100%);
     background: -o-linear-gradient(top, rgba(72, 63, 92, 0.96) 0%, rgba(102, 106, 150, 1) 100%);
