@@ -25,17 +25,25 @@ function displayAnswer() {
         calculator.answer.value = result;
         currentNum = result;
     } else {
-        clear();
         calculator.answer.value = 'Error';
         setTimeout(() => {
+            clear();
             calculator.answer.value = '';
-        }, 1000);
+        }, 1500);
     }
 }
 
 function storeNum(val) {
     calculator.answer.value += val;
     currentNum += val;
+    if ((currentNum.match(/\./g) || []).length >1) {
+        calculator.answer.value = 'Err, two "."';
+        setTimeout(() => {
+            clear();
+            calculator.answer.value = '';
+        }, 1500);
+    }
+
 }
 
 function storeOperator(op) {
