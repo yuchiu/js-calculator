@@ -1,63 +1,32 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand:300');
 body {
-    background: #C9D6FF;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #E2E2E2, #C9D6FF);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #E2E2E2, #C9D6FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #757F9A;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #D7DDE8, #757F9A);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #D7DDE8, #757F9A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
     margin-top: 10%;
+    min-height: 100vh;
 }
 
 #calc-container {
     width: 390px;
-    border: 2px solid grey;
+    border: 3px solid #595483eb;
     border-radius: 6px;
-    background: rgba(72, 63, 92, 0.96);
-    background: -moz-linear-gradient(top, rgba(71, 63, 92, 0.96) 0%, rgba(102, 106, 150, 1) 100%);
-    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(72, 63, 92, 0.96)), color-stop(100%, rgba(102, 106, 150, 1)));
-    background: -webkit-linear-gradient(top, rgba(72, 63, 92, 0.96) 0%, rgba(102, 106, 150, 1) 100%);
-    background: -o-linear-gradient(top, rgba(72, 63, 92, 0.96) 0%, rgba(102, 106, 150, 1) 100%);
-    background: -ms-linear-gradient(top, rgba(72, 63, 92, 0.96) 0%, rgba(102, 106, 150, 1) 100%);
-    background: linear-gradient(to bottom, rgba(72, 63, 92, 0.96) 0%, rgba(102, 106, 150, 1) 100%);
+    padding:0 10px 10px 10px;
+    background: hsla(260, 19%, 21%, 0.92) ;
+    background: -moz-linear-gradient(top, #322b3feb 0%, rgb(112, 125, 163) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, hsla(260, 19%, 21%, 0.92)), color-stop(100%, rgb(112, 125, 163)));
+    background: -webkit-linear-gradient(top, hsla(260, 19%, 21%, 0.92) 0%, rgb(112, 125, 163) 100%);
+    background: -o-linear-gradient(top, hsla(260, 19%, 21%, 0.92) 0%, rgb(112, 125, 163) 100%);
+    background: -ms-linear-gradient(top, hsla(260, 19%, 21%, 0.92) 0%, rgb(112, 125, 163) 100%);
+    background: linear-gradient(to bottom, hsla(260, 19%, 21%, 0.92) 0%, rgb(112, 125, 163) 100%);
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#483f5c', endColorstr='#666a96', GradientType=0);
+    -webkit-box-shadow: 0px -11px 78px 8px rgba(96,99,128,1);
+    -moz-box-shadow: 0px -11px 78px 8px rgba(96,99,128,1);
+    box-shadow: 0px -11px 78px 8px rgba(96,99,128,1);
 }
-
-input[type=button] {
-    font-family: 'Quicksand', sans-serif;
-    font-size: 30px;
-    width: 85px;
-    height: 100px;
-    margin: 0px;
-    border: 1px solid #9399d6;
-    background-color: transparent;
-    outline: none;
-    transition-duration: 0.8s, 1.5s, 0.8s;
-    transition-property: background, border-radius, color;
-}
-
-input[type=button]:hover {
-    color: #fff;
-    background: #5c6e8e;
-    border-radius: 1px;
-}
-
-input[type=button]:active {
-    transition-duration: 0.6s;
-    background: #2e385b;
-    border-radius: 0;
-}
-
-#mainBar{
-    font-family: 'Quicksand', sans-serif;
-    position: relative;
-    width: 265px;
-    height: 90px;
-    margin: 5px auto;
-    background-color: transparent;
-    border: 1px solid #9399d6;
-    font-size: 50px;
-    text-align: right;
-    vertical-align: text-top;
-    color: #99ffcc;
-    outline: none;
+#upper-section{    
+    border-bottom: 1px solid #6566a3;
 }
 #topBar{
     font-family: 'Quicksand', sans-serif;
@@ -66,19 +35,59 @@ input[type=button]:active {
     height: 35px;
     margin: 5px auto;
     background-color: transparent;
-    border-bottom: 1px solid #9399d6;
-    border-top: none;
-    border-right: none;
-    border-left:none;
-    font-size: 15px;
+    font-size: 20px;
     text-align: right;
     vertical-align: text-top;
-    color: #99ffcc;
+    color: #a1ffd0;
     outline: none;
+    border: none;
 }
 
+#mainBar{
+    font-family: 'Quicksand', sans-serif;
+    position: relative;
+    width: 265px;
+    height: 90px;
+    margin: 5px auto;
+    font-size: 50px;
+    text-align: right;
+    vertical-align: text-top;
+    color: #a1ffd0;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    background: transparent; 
+}
+.number, .symbol {
+    border: none;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 30px;
+    width: 85px;
+    height: 100px;
+    margin: 0px;
+    background-color: transparent;
+    outline: none;
+    transition-duration: 00.92s, 1.5s, 00.92s;
+    transition-property: background, border-radius, color;
+}
+
+.number:hover  {
+    color: #fff;
+    background: hsl(172, 21%, 44%);
+    border-radius: 1px;
+}.symbol:hover {
+    color: #fff;
+    background: hsl(7, 21%, 46%);
+    border-radius: 1px;
+}
+
+.number:active, .symbol:active {
+    transition-duration: 0.6s;
+    background: #2e385b;
+    border-radius: 0;
+}
 .number {
-    color: #99ffcc;
+    color: #a1ffd0;
 }
 
 .symbol {
@@ -98,12 +107,12 @@ input[type=button]:active {
 
 #clear:hover {
     color: #fff;
-    background: #d88e6e;
-    border-radius: 1em;
+    background: hsl(0, 56%, 56%);
+    border-radius: 0.2em;
 }
 
 #clear:active {
     transition-duration: 0.6s;
     background: #a33830;
-    border-radius: 0;
+    border-radius: 0.1em;
 }
